@@ -10,6 +10,7 @@ export class UserController {
   @Post('doAdd')
   doAdd(@Body() body, @Response() res) {
     console.log(body);
-    res.redirect('/user');
+
+    res.redirect('/user'); //路由跳转
   }
 }
